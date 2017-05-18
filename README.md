@@ -1,25 +1,21 @@
-Ionic App Base
-=====================
+refer to this SO answer for more info http://stackoverflow.com/questions/44040154/ionic-inappbrowser-no-done-close-button-ios/44041272#44041272
 
-A starting project for Ionic that optionally supports using custom SCSS.
+### How to use this repo :
 
-## Using this project
-
-We recommend using the [Ionic CLI](https://github.com/driftyco/ionic-cli) to create new Ionic projects that are based on this project but use a ready-made starter template.
-
-For example, to start a new Ionic project with the default tabs interface, make sure the `ionic` utility is installed:
+Download nodejs from https://nodejs.org/en/download/current/ and install node and npm
 
 ```bash
-$ npm install -g ionic
+$ sudo npm install -g ionic cordova
 ```
+clone this repository and run ```npm install```
 
-Then run: 
+Then, to run it in browser, use ```ionic serve``` or 
+to run it in emulator/device
 
 ```bash
-$ ionic start myProject tabs
+$ ionic cordova platform add ios
+$ ionic cordova run ios
 ```
 
-More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/getting-started) page and the [Ionic CLI](https://github.com/driftyco/ionic-cli) repo.
+Substitute ios for android if not on a Mac.
 
-## Issues
-Issues have been disabled on this repo, if you do find an issue or have a question consider posting it on the [Ionic Forum](http://forum.ionicframework.com/).  Or else if there is truly an error, follow our guidelines for [submitting an issue](http://ionicframework.com/submit-issue/) to the main Ionic repository.
